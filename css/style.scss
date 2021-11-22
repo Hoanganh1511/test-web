@@ -1,0 +1,3614 @@
+$color-header:#1f2732;
+$color-text-nav:#ffffff;
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 15px;
+}
+body{
+    margin:0 auto;
+}
+.button{
+    text-decoration: none;
+    color:white;
+    margin-top:44px;
+    padding:16px 66px;
+    border-radius:32px;
+    font-size:14.58px;
+    text-transform: uppercase;
+    background: linear-gradient(0deg, rgba(8,104,36,1) 0%, rgba(15,204,92,1) 100%);
+}
+.button-link{
+    color: rgba(0,0,0,0.8);
+    text-align: left;
+    width: fit-content;
+    text-decoration: none;
+    position:relative;
+    text-transform: uppercase;
+    font-weight: 500;
+    &::after{
+        position:absolute;
+        content:'';
+        top:100%;
+        left:0;
+        margin-top:1px;
+        width: 100%;
+        height:1px;
+        background:#2ed573;
+    }
+}
+header{
+   
+    section{
+        background-color:$color-header;
+       
+       .container{
+           
+            .content{
+                  display:flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding:14px 0;
+                .left__bar{
+                    display:flex;
+                    align-items: center;
+                    color:white;
+                    
+                    ul{
+                        margin:0;
+                      
+                        li{
+                              list-style:none;
+                            
+                            padding:0;
+                            font-size:11px;
+                            margin-left:12px;
+
+                        }
+                    }
+                    i{
+                        font-size:8px;
+                        margin-left:4px;
+                    }
+                    .social{
+                        .social-ul{
+                            display:flex;
+                            margin-left:11px;
+                            .list__item--social{
+                                margin:0 4px;
+                                i{
+                                    font-size:14px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .right__bar{
+                    display:flex;
+                    align-items: center;
+                     
+                        .right__bar--list{
+                            display:flex;
+                             list-style:none;
+                             .list-item{
+                                 text-transform: uppercase;
+                                 .link-item{
+                                     text-decoration: none;
+                                     align-items: center;
+                                     display:flex;
+                                     color:white;
+                                     font-size:12px;
+                                     font-weight: 400;
+                                     margin-left:25px;
+                                     i{
+                                         font-size:6px;
+                                         margin-right:8px;
+                                         
+                                     }
+                                    
+                                 }
+                             }
+
+                            
+                        }
+                        .right__bar--hotline{
+                            i{
+                                margin-right:4px;
+                            }
+                            font-size:12px;
+                            letter-spacing: 1px;
+                            display:none;
+                        }
+                }
+        }
+       }
+    }
+
+
+
+    nav{
+        position:relative;
+        height:100vh;
+        
+        .wrap{
+            background:rgba(0,0,0,0.2);
+                overflow: hidden;
+            .container{
+        
+            .nav-content{
+                
+                padding:28px 0;
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                .logo{
+                    img{
+                        padding-left:4px;
+                    }
+                }
+                .navbar{
+                    .nav-list{
+                        display:flex;
+                        transform:translateY(-6px);
+                        .list-item{
+                            list-style: none;
+                            display:flex;
+                            margin-left:42px;
+                            align-items: center;
+                            position:relative;
+                             
+                                &:hover{
+                                    i{
+                                        opacity: 0;
+                                    }
+                                    a{
+                                        &::after{
+                                        opacity:1;
+
+                                    }
+                                    }
+                                }
+                             i{
+                                    font-size:6px;
+                                    margin-right:12px;
+                                    color:$color-text-nav;
+                                  
+                                }
+                            
+                            a{
+                                text-decoration: none;
+                                color:$color-text-nav;
+                                display:flex;
+                                align-items:center;
+                                text-transform: uppercase;
+                                font-weight: 100;
+                                font-size:14px;
+                                position:relative;
+                                &::after{
+                                    position:absolute;
+                                    top:100%;
+                                    left:0;
+                                    content:'';
+                                    width:100%;
+                                    height:2px;
+                                    background-color:white;
+                                    transition:0.2s linear;
+                                    opacity:0;
+                                    // display:none;
+                                }
+                                
+                               
+                               
+                            }
+                        }
+                    }
+                    .responsive-navbar{
+                        display:none;
+                        color:white;
+                        font-size:28px;
+                         transform:translateY(-6px);
+                    }
+                }
+            }
+        }
+        }
+        .hero{
+            position:absolute;
+            z-index:-1;
+            top:0;
+            left:0;
+            width: 100%;
+            height:100%;
+            background-image: url("../images/hero-background.png"), linear-gradient(to right, #3aaf36 0%, #30cdd7 80%);
+            .hero-content{
+                position:absolute;
+                top:50%;
+                left:50%;
+                width:100%;
+                transform:translate(-50%,-24%);
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                .hero-text{
+                    font-size:48px;
+                    color:white;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-family: "Open Sans";
+                }
+                .company-img{
+                    margin-top:40px;
+                   
+                }
+                .mouse-img{
+                    margin-top:66px;
+                }
+                
+            }
+            .end-hero{
+                position:absolute;
+                top:100%;
+                left:0;
+                width:100%;
+                transform:translate(0,-90%);
+                img{
+                    width:100%;
+                    filter:brightness(2000%);
+                
+                }
+            }
+        }
+    }
+}
+
+
+main{
+    overflow: hidden;
+    .wrap{
+        .wrap-services{
+            position:relative;
+             overflow: hidden;
+              .container{
+            .services-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+    .vertical-line{
+        img{
+            transform:translateY(-6px);
+        }
+    }
+    .services-title{
+        margin-top:26px;
+        font-size:34px;
+        color:rgba(0,0,0,0.8);
+        p{
+            margin-top:38px;
+            font-size:16.67px;
+            font-family: 'Open Sans';
+            
+        }
+    }
+    .box-display{
+        margin-top:50px;
+        display:flex;
+        align-items: center;
+        position:relative;
+        flex-direction: row;
+        width:100%;
+        justify-content:flex-end;
+        .left-box{
+            transform:translateX(-652px);
+            position:absolute;
+            .wrap-item{
+                display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 32px;
+                    padding:54px 52px 54px 48px;
+                    background:#f7fbf9;
+                .item{
+                    width:208px;
+                    padding:27px 10px;
+                    border:1px solid rgba(0,0,0,0.1);
+                    // display: flex;
+                    // flex-direction: column;
+                    // align-items: center;
+                    // justify-content: center;
+                    &:nth-child(1){
+                        background:#2ed573;
+
+                        h4{
+                            
+                            color:white;
+                        }
+                    }
+                    .image{
+                           width: 98px;
+                            height: 84px;
+                        padding: 20px;
+                        border: 1px dashed #9ceabd;
+                        border-radius: 50%;
+                        display: inline-block;
+                        img{
+                         
+                        
+                        }
+                        
+                    }
+                    h4{
+                        margin-top:18px;
+                        color:rgba(0,0,0,0.9);
+                        text-transform: uppercase;
+                        font-size:16px;
+                        font-weight: 600;
+                        font-family:'Open Sans',sans-serif;
+                        
+                    }
+                }
+            }
+        }
+        .right-box{
+            z-index:-1;
+             padding:60px 22px 34px 120px;
+                border:1px dashed #9ceabd;
+         
+              
+                display:flex;
+                flex-direction: column;
+            h4{
+                        text-align: left;
+                        color:#2ed573;
+                        position:relative;
+                        display:inline-block;
+                        width: fit-content;
+                        float:left;
+                        font-size:18px;
+                         margin:0;
+                        &::after{
+                            position:absolute;
+                            content:'';
+                            top: 100%;
+                            left:0;
+                            width:100%;
+                            height:2px;
+                            background:#2ed573;
+                        }
+                }
+            .box {
+                margin-top:54px;
+                width:600px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+                     margin:0;
+               
+               
+               
+                
+                div{
+                    display:flex;
+                    justify-content: flex-start;
+                    text-align: left;
+                    font-size:15px;
+                    padding:12px 0;
+                    line-height: 24px;
+                    // width:570px;
+                }
+                }
+            .span-col-2{grid-column: span 2 / auto;}
+        }
+    }
+    .vertical-line{
+        margin-top:40px;
+        transform:translateY(30px);
+    }
+    .end-services{
+        // position: absolute;
+        // top: 100%;
+        width:100vw;
+
+        z-index:2;
+
+        img{
+            width:100%;
+            transform: translateY(5px);
+        }
+    }
+}
+
+
+
+        }
+        }
+
+
+
+
+        // Wrap Phone
+        .wrap-phone{
+            // margin-top:100px;
+            height:auto;
+            position:relative;
+            background:#42b470;
+            overflow: hidden;
+            .end-phone{
+                
+                width:100%;
+                
+                img{
+                    width:101%;
+                    z-index:5000;
+                    transform:translateY(6px) !important;
+                }
+            }
+         
+           .container{
+                .vertical-line{
+                    text-align: center;
+                    position:relative;
+                    z-index:1000;
+                    // transform:translateY(0px) !important;
+                }
+                .layer-background{
+                    z-index: 100;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                   z-index:0;
+                    .banner-bg{
+                        transform:translateY(-40px);
+                        
+                    }
+                    .layer{
+                        position:absolute;
+                        top:0;left:0;
+                        width:100%;
+                        
+                    }
+                }
+                .phone-content{
+                        margin-bottom:70px;
+                        .phone-title{
+                            position:relative;
+                            text-align: center;
+                                color:rgba(255,255,255,0.9);
+                                font-size:36px;
+                                margin-top:38px;
+                        }
+                        .phone-text{
+                             position:relative;
+                               text-align: center;
+                                color:rgba(255,255,255,0.7);
+                                font-size:17px;
+                                margin-top:16px;
+                        }
+                        .phone__box{
+                            margin-top:114px;
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-gap: 10px;
+                            .phone__box--left{
+                                position:relative;
+                                ul{
+                                    display:flex;
+                                    flex-direction: column;
+                                    li{
+                                        margin:46px 0 84px 0;
+                                        display:flex;
+                                        
+                                        .box-text{
+                                            color:rgba(255,255,255,0.8);
+                                            text-align: right;
+                                           h4{
+                                               text-transform: uppercase;
+                                              
+                                           }
+                                           p{
+                                               margin-top:20px;
+                                                   
+                                           }
+
+                                        }
+                                        img{
+                                            width:auto;
+                                            height:fit-content;
+                                            margin-left:30px;
+                                        }
+                                    }
+                                }
+                            }
+                            .phone__box--middle{
+                                    .phone-image{
+                                        position:relative;
+                                        margin-top:200px;
+                                      
+                                        .background-phone{
+                                            position:absolute;
+                                           top:50%;
+                                           left:50%;
+                                            transform:translate(-50%,-50%);
+                                        }
+                                        .background-white{
+                                            position:absolute;
+                                            top:50%;
+                                            left:50%;
+                                            transform:translate(-49.5%,-51.5%);
+                                        }
+                                        .background-logo{
+                                            position:absolute;
+                                            top:0;
+                                            left:50%;
+                                            transform:translate(-50%,-300%);
+                                        }
+                                        .image-circle{
+                                                    position:relative;
+                                                    .background-circle{
+                                                            position:absolute;
+                                                            top:50%;
+                                                            left:50%;
+                                                            transform:translate(-50%,-50%);
+                                                            z-index:2;
+                                                        }
+                                                    .background-shape{
+                                                        position:absolute;
+                                                        top:50%;
+                                                        left:50%;
+                                                        transform:translate(-50%,-50%);
+                                                        z-index:3;
+                                                    }
+                                                    .background-content{
+                                                         position:absolute;
+                                                        top:50%;
+                                                        left:50%;
+                                                        transform:translate(-50%,-50%);
+                                                        z-index:1;
+                                                    }
+                                        }
+
+                                    }
+                            }
+                            .phone__box--right{
+                                position:relative;
+                                     ul{
+                                    display:flex;
+                                    flex-direction: column;
+                                    li{
+                                        margin:46px 0 84px 0;
+                                        display:flex;
+                                        flex-direction: row-reverse;
+                                        .box-text{
+                                                 color:rgba(255,255,255,0.8);
+                                            text-align: left;
+
+                                           h4{
+                                               text-transform: uppercase;
+                                           }
+                                           p{
+                                               margin-top:20px;
+                                           }
+
+                                        }
+                                        img{
+                                            width:auto;
+                                            height:fit-content;
+                                            margin-right:30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .phone__box--responsive{
+                            display:none;
+                        }
+                    
+                }
+
+           }
+        }
+
+        // Wrap Product
+        .wrap-product{
+            overflow:hidden;
+            height:556px;
+            z-index:3000;
+            .container{
+               .product-content{
+                   display:flex;
+                   flex-direction: column;
+                   overflow: hidden;
+                   .vertical-line{
+                     text-align: center;
+                     transform:translateY(-12px);
+                     z-index:4000;
+                   }
+                    .product-title{
+                        font-size:36px;
+                        color:rgba(0,0,0,0.8);
+                        margin:50px 0;
+                        text-align: center;
+
+                    }
+                    .product-image{
+                        display:flex;
+                        justify-content: center;
+                        // height:446px;
+                        margin-bottom:200px;
+                        .product{
+                            position:relative;
+                            .side-phone{
+                            width:360px;
+                            }
+                           
+                        }
+                        .p1{
+                            transform:translate(90px,40px);
+                            z-index:1;
+                            
+                            .about-phone{
+                                position:absolute;
+                                top:35px;
+                                left:19px;
+                                width:340px;
+                            }
+                        }
+                        .p2{
+                            z-index:2;
+                        }
+                         .p3{
+                            transform:translate(-90px,40px);
+                            z-index:1;
+                            
+                            .about-phone{
+                                position:absolute;
+                                top:35px;
+                                right:19px;
+                                width:340px;
+                            }
+                        }
+                        
+                    }
+               }
+            }
+        }
+
+        // Wrap response
+        .wrap-response{
+            z-index:4;
+                .slogan{
+                    background:#0c161e;
+                    text-align: center;
+                    .container{
+                        p{
+                            font-size:20px;
+                            padding:72px 0;
+                            color:rgba(255,255,255,0.7);
+                            span{
+                                color:white;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+
+                }
+                .response{
+                          position:relative;
+                        // width:100%;
+                        .background-response{
+                            position:relative;
+                            top:0;
+                            left:0;
+                            width:100%;
+                            height:fit-content;
+                            img{
+                                width:100%;
+                                height:auto;
+                            }
+                        }
+                       
+                           
+                            .response-content{
+                                position:absolute;
+                                top:0;
+                                left:0;
+                                width:100%;
+                              
+                                .container{
+                                     width:100%;
+                                    .vertical-line-top{
+                                    text-align: center;
+                                        z-index:1000;
+                                        img{
+                                            margin-top:12px;
+                                        }
+                                     }
+                                     .response-text{
+                                         color:white;
+                                         text-align: center;
+                                         margin-top:12px;
+                                         font-size:27px;
+                                     }
+                                     .slider{
+                                        margin-top:116px;
+                                         display:flex;
+                                         justify-content:space-between;
+                                         align-items: center;
+                                         .prev-btn{
+                                            display:inline;
+                                            padding:8px 12px;
+                                            background-color:white;
+                                         }
+                                         .next-btn{
+                                            display:inline;
+                                             padding:8px 12px;
+                                            background-color:white;
+                                         }
+                                         .slider-content{
+                                             width:600px;
+                                             display:flex;
+                                             flex-direction: column;
+                                             text-align: center;
+                                             background:rgba(0,0,0,0.4);
+                                             position:relative;
+                                             .avatar{
+                                                 position:absolute;
+                                                 top:0;
+                                                 left:50%;
+                                                 transform:translate(-50%,-50%);
+                                                    width:114px;
+                                                    height:114px;
+                                                    border-radius:50%;
+                                                    border:3px solid white;
+                                                   background:url('../images/avatar.png');
+                                                   background-position:right;
+
+                                                 
+                                             }
+                                             .bio{
+                                                margin-top:90px;
+                                                 color:white;
+                                             }
+                                             .profile{
+                                               margin:32px 0;
+                                               color:white;
+                                               font-style: italic;
+                                            
+                                             }
+                                         }
+                                         
+                                     }
+
+                                     .dot-slide{
+                                         display:flex;
+                                         justify-content: center;
+                                         margin-top:24px;
+                                         i{
+                                             margin:2px;
+                                             color:white;
+                                             &:nth-child(1){
+                                                 color:#659c19;
+                                             }
+                                         }
+                                     }
+                                     .vertical-line-bottom{
+                                          text-align: center;
+                                         margin-top:76px;
+                                     }
+
+                                }
+                            }
+                            .end-response{
+                                position:absolute;
+                                bottom:0;
+                                left:0;
+                                width:100%;
+                                img{
+                                    
+                                    width:100%;
+                                   
+                                }
+                            }
+                        
+                }
+            
+        }
+        .wrap-news{
+            z-index:5;
+            .container{
+                .news-content{
+                    .vertical-line{
+                        text-align: center;
+                        transform:translateY(-20px);
+                    }
+                    .news-title{
+                        font-size:28px;
+                        color:rgba(0,0,0,0.8);
+                        margin-top:20px;
+                        text-align: center;
+                    }
+                    .news-list{
+                        display:flex;
+                        justify-content:center;
+                        margin-top:76px;
+                       .news__item{
+                            padding:0 18px;
+                            
+                            img{
+                                display:block;
+                                width:100%;
+                                // height:262px;
+                            }
+                            .news__item--content{
+                                background:#f5f5f5;
+                                text-align: center;
+                                transform:translateY(-40px);
+                                margin:0 20px;
+                                color:rgba(0,0,0,0.8);
+                                transition:0.2s ease-in-out;
+                                cursor:default;
+                                .news-date{
+                                    padding:28px 0;
+                                    display:block;
+                                    font-size:14px;
+                                    i{
+                                        margin-right:4px;
+                                    }
+                                }
+                                &:hover{
+                                    background:#2ed573;
+                                    color:rgba(255,255,255,1);
+                                    a{
+                                        color:rgba(255,255,255,0.9);
+                                    }
+                                }
+                                h4{
+                                    margin-bottom:20px;
+                                    text-transform: uppercase;
+                                    padding:0 30px;
+                                  
+                                }
+                                .news-desc{
+                                    margin-bottom:20px;
+                                    font-size:14px;
+                                    padding:0 30px;
+                                }
+                                a{
+                                    padding:14px 0;
+                                    display:block;
+                                    border-top:1px dashed rgba(0,0,0,0.2);
+                                    text-decoration: none;
+                                    color:rgba(0,0,0,0.7);
+                                    cursor:pointer;
+                                }
+                            }
+                       }
+                    }
+                    .end-news{
+                        text-align: center;
+                        transform:translateY(26px);
+                    }
+                }
+            }
+        }
+
+        // Wrap recruitment
+        .wrap-recruitment{
+            position:relative;
+            .background__recuitment{
+                position:relative;
+                top:0;
+                left:0;
+                width:100%;
+                img{
+                    width:100%;
+                }
+            }
+            .background__recruitment--end{
+                position:absolute;
+                top:100%;
+                left:0;
+                transform:translateY(-56%);
+                width:100%;
+                img{
+                    width:100%;
+                }
+            }
+           .recruitment-main{
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                .container{
+               
+                
+                .recruitment-content{
+                    width:100%;
+                    .vertical-line{
+                        text-align: center;
+                        padding-top:60px;
+                        width:100%;
+                        img{
+                                text-align: center;
+                        }
+                    }
+                    h4{
+                        text-align: center;
+                        margin-top:40px;
+                        color:white;
+                        font-size:27px;
+                    }
+                    .recruitment-info{
+                        display:flex;
+                        margin-top:94px;
+                        justify-content:space-between;
+                        padding:0 56px;
+                        align-items:center;
+                        .recruitment-list{
+                            ul{
+                                margin-bottom:52px;
+                                li{
+                                    padding:10px 0;
+                                    display:flex;
+                                    // align-items:center;
+                                    img{
+                                        height: fit-content;
+                                    }
+                                    p{
+                                        color:white;
+                                        font-size:14px;
+                                        font-family: 'Open Sans', sans-serif;
+                                        margin-left:22px;
+                                    }
+                                }
+                            }
+                            .button{
+                                padding:12px 26px !important;
+                            }
+                           
+                        }
+                    }
+                }
+            }
+           }
+        }
+    }
+}
+
+footer{
+    background:#1f2732;
+    .wrap-footer{
+        margin-top:-10px;
+        .container{
+            .circle-logo{
+                position:relative;
+                
+                img{
+                   position:absolute;
+                   top:0;
+                   left:50%;
+                   transform:translate(-50%,-50%);
+
+                }
+            }
+            .footer-content{
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+                .footer__content--logo{
+                    margin-top:50px;
+                }
+                .footer-desc{
+                    margin-top:40px;
+                    color:rgba(255,255,255,0.6);
+                }
+                .footer-contact{
+                    margin-top:28px;
+                    ul{
+                        display:flex;
+                        justify-content:center;
+                        li{
+                            list-style: none;
+                            display:flex;
+                            margin:0 34px;
+                            align-items:center;
+                            img{
+                                height:fit-content;
+                                transform:translateY(3px);
+                            
+                            }
+                            p{
+                                margin-left:14px;
+                                color:rgba(255,255,255,0.8);
+                            }
+                        }
+                    }
+                }
+                .footer-social{
+                    margin-top:26px;
+                    margin-bottom:46px;
+                    ul{
+                        list-style: none;
+                        display:flex;
+                        justify-content:center;
+                        li{
+                            i{
+                                margin:0 10px;
+                                color:white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .copyright{
+            border:1px solid #263953;
+            p{
+                padding:24px 0 44px 0;
+                font-family: 'Open Sans', sans-serif;
+                color:rgba(255,255,255,0.7);
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+
+/* ----------- iPad mini ----------- */
+@media only screen
+  and (min-device-width: 768px) 
+  and (max-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+       nav{
+         
+          .wrap{
+              background:none !important;
+              .logo{
+                  img{
+                      border-bottom:2px solid rgba(255,255,255,0.2);
+                  }
+              }
+          }
+      }
+      .container{
+          width:80% !important;
+      }
+      .hero-text{
+          font-size:24px !important;
+      }
+      .nav-list{
+          display:none !important;
+      }
+      .company-img{
+          width:60%;
+      }
+      .responsive-navbar{
+          display:block !important;
+      }
+
+
+      .right__bar--list{
+          .list-item{
+              .link-item{
+                  font-size:8px !important;
+              }
+          }
+      }
+
+
+
+
+
+
+    //   Right box
+    .box-display{
+        flex-direction:column !important;
+        .left-box{
+            position:relative !important;
+             transform:translateX(0) !important;
+            .wrap-item{
+                background: transparent !important;
+                display:flex !important;
+                flex-direction: column !important;
+                .item{
+                    margin-top:12px !important;
+                  
+                    
+                }
+            }
+        
+        }
+        .right-box{
+            margin-top:20px !important;
+            width:100% !important;
+            .box{
+                width:80% !important;
+                div{
+                    img{
+                        width:200px;
+                    }
+                }
+            }
+        }
+
+
+        .box-text{
+           h4{
+                font-size:18px !important;
+           }
+           p{
+                font-size:10px !important;
+           }
+        }
+    }
+
+
+
+
+
+     // Wrap Phone
+        .wrap-phone{
+            // margin-top:100px;
+            height:auto;
+            position:relative;
+            background:#42b470;
+            overflow: hidden;
+            .end-phone{
+                
+                width:100%;
+                img{
+                    width:101%;
+                    z-index:5000;
+                }
+            }
+         
+           .container{
+                .vertical-line{
+                    text-align: center;
+                    position:relative;
+                    z-index:1000;
+                    transform:translateY(-20px);
+                }
+                .layer-background{
+                    z-index: 100;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                   z-index:0;
+                    .banner-bg{
+                        transform:translateY(-40px);
+                        
+                    }
+                    .layer{
+                        position:absolute;
+                        top:0;left:0;
+                        width:100%;
+                        
+                    }
+                }
+                .phone-content{
+                        margin-bottom:70px;
+                        .phone-title{
+                            position:relative;
+                            text-align: center;
+                                color:rgba(255,255,255,0.9);
+                                font-size:36px;
+                                margin-top:38px;
+                        }
+                        .phone-text{
+                             position:relative;
+                               text-align: center;
+                                color:rgba(255,255,255,0.7);
+                                font-size:17px;
+                                margin-top:16px;
+                        }
+                        .phone__box{
+                            margin-top:114px;
+                            display: none !important;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-gap: 10px;
+                            .phone__box--left{
+                                position:relative;
+                                ul{
+                                    display:flex;
+                                    flex-direction: column;
+                                    li{
+                                        margin:46px 0 84px 0;
+                                        display:flex;
+                                        
+                                        .box-text{
+                                            color:rgba(255,255,255,0.8);
+                                            text-align: right;
+                                           h4{
+                                               text-transform: uppercase;
+                                              
+                                           }
+                                           p{
+                                               margin-top:20px;
+                                                   
+                                           }
+
+                                        }
+                                        img{
+                                            width:auto;
+                                            height:fit-content;
+                                            margin-left:30px;
+                                        }
+                                    }
+                                }
+                            }
+                            .phone__box--middle{
+                                    .phone-image{
+                                        position:relative;
+                                        margin-top:200px;
+                                      
+                                        .background-phone{
+                                            position:absolute;
+                                           top:50%;
+                                           left:50%;
+                                            transform:translate(-50%,-50%);
+                                        }
+                                        .background-white{
+                                            position:absolute;
+                                            top:50%;
+                                            left:50%;
+                                            transform:translate(-49.5%,-51.5%);
+                                        }
+                                        .background-logo{
+                                            position:absolute;
+                                            top:0;
+                                            left:50%;
+                                            transform:translate(-50%,-300%);
+                                        }
+                                        .image-circle{
+                                                    position:relative;
+                                                    .background-circle{
+                                                            position:absolute;
+                                                            top:50%;
+                                                            left:50%;
+                                                            transform:translate(-50%,-50%);
+                                                            z-index:2;
+                                                        }
+                                                    .background-shape{
+                                                        position:absolute;
+                                                        top:50%;
+                                                        left:50%;
+                                                        transform:translate(-50%,-50%);
+                                                        z-index:3;
+                                                    }
+                                                    .background-content{
+                                                         position:absolute;
+                                                        top:50%;
+                                                        left:50%;
+                                                        transform:translate(-50%,-50%);
+                                                        z-index:1;
+                                                    }
+                                        }
+
+                                    }
+                            }
+                            .phone__box--right{
+                                position:relative;
+                                     ul{
+                                    display:flex;
+                                    flex-direction: column;
+                                    li{
+                                        margin:46px 0 84px 0;
+                                        display:flex;
+                                        flex-direction: row-reverse;
+                                        .box-text{
+                                                 color:rgba(255,255,255,0.8);
+                                            text-align: left;
+
+                                           h4{
+                                               text-transform: uppercase;
+                                           }
+                                           p{
+                                               margin-top:20px;
+                                           }
+
+                                        }
+                                        img{
+                                            width:auto;
+                                            height:fit-content;
+                                            margin-right:30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                          .phone__box--responsive{
+                            margin-top:80px !important;
+                          padding-bottom:100px;
+                            display: grid !important;
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-gap: 10px;
+                           
+                            .phone__box--left{
+                                    .phone-image{
+                                        position:relative;
+                                        margin-top:200px;
+                                      
+                                        .background-phone{
+                                            position:absolute;
+                                            top:50%;
+                                            left:50%;
+                                            transform:translate(-50%,-50%);
+                                        }
+                                        .background-white{
+                                            position:absolute;
+                                            top:50%;
+                                            left:50%;
+                                            transform:translate(-49.5%,-51.5%);
+                                        }
+                                        .background-logo{
+                                            position:absolute;
+                                            top:0;
+                                            left:50%;
+                                            transform:translate(-50%,-300%);
+                                        }
+                                        .image-circle{
+                                                    position:relative;
+                                                    .background-circle{
+                                                            position:absolute;
+                                                            top:50%;
+                                                            left:50%;
+                                                            transform:translate(-50%,-50%);
+                                                            z-index:2;
+                                                        }
+                                                    .background-shape{
+                                                        position:absolute;
+                                                        top:50%;
+                                                        left:50%;
+                                                        transform:translate(-50%,-50%);
+                                                        z-index:3;
+                                                    }
+                                                    .background-content{
+                                                         position:absolute;
+                                                        top:50%;
+                                                        left:50%;
+                                                        transform:translate(-50%,-50%);
+                                                        z-index:1;
+                                                    }
+                                        }
+
+                                    }
+                            }
+                            .phone__box--right{
+                                position:relative;
+                                margin-left:20px;
+                                align-items:center;
+                                     ul{
+                                    display:flex;
+                                    flex-direction: column;
+                                    li{
+                                        margin:20px 0;
+                                        display:flex;
+                                        flex-direction: row-reverse;
+                                        justify-content: flex-end;
+                                        .box-text{
+                                                 color:rgba(255,255,255,0.8);
+                                                text-align: left;
+
+                                           h4{
+                                               text-transform: uppercase;
+                                               font-size:12px !important;
+                                           }
+                                           p{
+                                               margin-top:6px !important;
+                                               font-size:10px !important;
+                                           }
+
+                                        }
+                                        img{
+                                            width:auto;
+                                            height:fit-content;
+                                            margin-right:30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    
+                }
+
+           }
+        }
+         // Wrap Product
+        .wrap-product{
+            overflow:hidden;
+            height:auto !important;
+            z-index:3000;
+            .container{
+               .product-content{
+                   display:flex;
+                   flex-direction: column;
+                   justify-content:space-between !important;
+                   overflow: hidden;
+                   margin-bottom:0 !important;
+                   .vertical-line{
+                     text-align: center;
+                     transform:translateY(-12px);
+                     z-index:4000;
+                   }
+                    .product-title{
+                        font-size:24px !important;
+                        color:rgba(0,0,0,0.8);
+                        margin:36px 0 !important;
+                        text-align: center;
+
+                    }
+                    .product-image{
+                        display:flex;
+                        justify-content: center;
+                        transform:translateY(13px);
+                        margin-bottom:0 !important;
+                        .product{
+                            position:relative;
+                            .side-phone{
+                            width:280px !important;
+                            }
+                            
+                            }
+                            .p1{
+                                transform:translate(80px,30px) !important;
+                                z-index:1;
+                                
+                                .about-phone{
+                                    position:absolute;
+                                    top:27px !important;
+                                    left:15px !important;
+                                    width:260px !important;
+                                }
+                            }
+                            .p2{
+                                z-index:2;
+                            }
+                            .p3{
+                                transform:translate(-80px,30px) !important;
+                                z-index:1;
+                                
+                                .about-phone{
+                                    position:absolute;
+                                    top:27px !important;
+                                    right:15px !important;
+                                    width:260px !important;
+                                }
+                            }
+                        
+                    }
+               }
+            }
+        }
+             // Wrap response
+       
+        .wrap-response{
+            z-index:4;
+                .slogan{
+                    background:#0c161e;
+                    text-align: center;
+                    .container{
+                        p{
+                            font-size:14px !important;
+                            padding:32px 0 !important;
+                            color:rgba(255,255,255,0.7);
+                            span{
+                                color:white;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+
+                }
+                .response{
+                          position:relative;
+                        // width:100%;
+                        .background-response{
+                            position:relative;
+                            top:0;
+                            left:0;
+                            width:100%;
+                            height:fit-content;
+                            img{
+                                width:100%;
+                                height:auto;
+                            }
+                        }
+                       
+                           
+                            .response-content{
+                                position:absolute;
+                                top:0;
+                                left:0;
+                                width:100%;
+                              
+                                .container{
+                                     width:100%;
+                                    .vertical-line-top{
+                                    text-align: center;
+
+                                        z-index:1000;
+                                        img{
+                                            margin-top:12px;
+                                            height:30px;
+                                        }
+                                     }
+                                     .response-text{
+                                         color:white;
+                                         text-align: center;
+                                         margin-top:12px;
+                                         font-size:12px !important;
+                                     }
+                                     .slider{
+                                        margin-top:50px !important;
+                                         display:flex;
+                                         justify-content:space-between;
+                                         align-items: center;
+                                         .prev-btn{
+                                            display:inline;
+                                            padding:8px 12px;
+                                            background-color:white;
+                                         }
+                                         .next-btn{
+                                            display:inline;
+                                             padding:8px 12px;
+                                            background-color:white;
+                                         }
+                                         .slider-content{
+                                             width:60% !important;
+                                             display:flex;
+                                             flex-direction: column;
+                                             text-align: center;
+                                             background:rgba(0,0,0,0.4);
+                                             position:relative;
+                                               
+                                             .avatar{
+                                                 position:absolute;
+                                                 top:0;
+                                                 left:50%;
+                                                 transform:translate(-50%,-50%);
+                                                    
+                                                    width:80px !important;
+                                                    
+                                                    height:80px !important;
+                                                  
+                                                    border-radius:50%;
+                                                    border:3px solid white;
+                                                   background:url('../images/avatar.png');
+                                                   background-position:right;
+
+                                                 
+                                             }
+                                             .bio{
+                                                margin-top:58px !important;
+                                                padding:0 12px !important;
+                                                 color:white;
+                                                 font-size:12px !important;
+                                             }
+                                             .profile{
+                                               margin:16px 0 !important;
+                                               color:white;
+                                               font-style: italic;
+                                            
+                                             }
+                                         }
+                                         
+                                     }
+
+                                     .dot-slide{
+                                         display:flex;
+                                         justify-content: center;
+                                         margin-top:24px;
+                                         i{
+                                             margin:2px;
+                                             color:white;
+                                             &:nth-child(1){
+                                                 color:#659c19;
+                                             }
+                                         }
+                                     }
+                                     .vertical-line-bottom{
+                                          text-align: center;
+                                          margin-top:none !important;
+                                         margin-bottom:0px !important;
+                                         display:none;
+                                        img{
+                                              height:30px !important;
+                                        }
+                                     }
+
+                                }
+                            }
+                            .end-response{
+                                position:absolute;
+                                bottom:0;
+                                left:0;
+                                width:100%;
+                                img{
+                                    
+                                    width:100%;
+                                   
+                                }
+                            }
+                        
+                }
+            
+        }
+        //News
+           .wrap-news{
+            z-index:5;
+            .container{
+                .news-content{
+                    .vertical-line{
+                        text-align: center;
+                        transform:translateY(0px)  !important;
+                        img{
+                            height:30px !important;
+                        }
+                    }
+                    .news-title{
+                        font-size:20px !important;
+                        color:rgba(0,0,0,0.8);
+                        margin-top:20px;
+                        text-align: center;
+                    }
+                    .news-list{
+                        display:flex;
+                        justify-content:center;
+                        margin-top:56px !important;
+                       .news__item{
+                            padding:0 18px;
+                            
+                            img{
+                                display:block;
+                                width:370px;
+                                // height:262px;
+                            }
+                            .news__item--content{
+                                background:#f5f5f5;
+                                text-align: center;
+                                transform:translateY(0px) !important;
+                                margin:0 !important;
+                                color:rgba(0,0,0,0.8);
+                                transition:0.2s ease-in-out;
+                                cursor:default;
+                                .news-date{
+                                    padding:10px 0 !important;
+                                    display:block;
+                                    font-size:12px !important;
+                                    i{
+                                        margin-right:4px;
+                                    }
+                                }
+                                &:hover{
+                                    background:#2ed573;
+                                    color:rgba(255,255,255,1);
+                                    a{
+                                        color:rgba(255,255,255,0.9);
+                                    }
+                                }
+                                h4{
+                                    margin-bottom:20px;
+                                    text-transform: uppercase;
+                                    padding:0 10px !important;
+                                    font-size: 9px;
+                                    font-weight: 800;
+
+                                  
+                                }
+                                .news-desc{
+                                    margin-bottom:20px;
+                                    font-size:10px !important;
+                                    padding:0 30px;
+                                }
+                                a{
+                                    padding:6px 0 !important;
+                                    font-size:13px !important;
+                                    display:block;
+                                    border-top:1px dashed rgba(255,255,255,0.6);
+                                    text-decoration: none;
+                                    color:rgba(0,0,0,0.7);
+                                    cursor:pointer;
+                                }
+                            }
+                       }
+                    }
+                    .end-news{
+                        text-align: center;
+                        transform:translateY(26px);
+                        img{
+                            height:30px !important;
+                            margin-bottom:20px;
+                        }
+                    }
+                }
+            }
+        }
+        .wrap-recruitment{
+            position:relative;
+            .background__recuitment{
+                position:relative;
+                top:0;
+                left:0;
+                width:100%;
+                img{
+                    width:100%;
+                }
+            }
+            .background__recruitment--end{
+                position:absolute;
+                top:100%;
+                left:0;
+                transform:translateY(-56%);
+                width:100%;
+                img{
+                    width:100%;
+                }
+            }
+           .recruitment-main{
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                .container{
+               
+                
+                .recruitment-content{
+                    width:100%;
+                    .vertical-line{
+                        text-align: center;
+                        padding-top:30px !important;
+                        width:100%;
+
+                        img{
+                                text-align: center;
+                                height:30px !important;
+                        }
+                    }
+                    h4{
+                        text-align: center;
+                        margin-top:20px !important;
+                        color:white;
+                        font-size:16px !important;
+                    }
+                    .recruitment-info{
+                        display:flex;
+                        margin-top:80px !important;
+                        
+                        justify-content:space-between;
+                        padding:0 56px;
+                        align-items:center;
+                        .recruitment-list{
+                            ul{
+                                margin-bottom:12px !important;
+                                li{
+                                    padding:6px 0;
+                                    display:flex;
+                                    // align-items:center;
+                                    img{
+                                        height: fit-content;
+                                    }
+                                    p{
+                                        color:white;
+                                        font-size:10px !important;
+                                        font-family: 'Open Sans', sans-serif;
+                                        margin-left:22px;
+                                    }
+                                }
+                            }
+                            .button{
+                                font-size:10px !important;
+                                padding:6px 10px !important;
+                            }
+                           
+                        }
+                        .image-recruit{
+                            width:30%;
+                        }
+                    }
+                }
+            }
+           }
+        }
+
+
+
+    //footer
+
+    footer{
+        .wrap-footer{
+            .container{
+                .footer-content{
+                    .footer-desc{
+                        font-size:15px !important;
+                    }
+                    .footer-contact{
+                        ul{
+                            display:flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            li{ 
+                                    display:flex;
+                                    justify-content: center;
+                                    margin:12px 0;
+                                    p{
+                                        font-size:11px !important;
+                                     }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+ 
+}
+ 
+@media only screen
+  and (min-device-width: 576px) 
+  and (max-device-width: 768px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      nav{
+          
+          .wrap{
+              background:none !important;
+              .logo{
+                  img{
+                      border-bottom:2px solid rgba(255,255,255,0.2);
+                  }
+              }
+          }
+      }
+      .container{
+          width:80% !important;
+      }
+      .hero-text{
+          font-size:16px !important;
+      }
+      .nav-list{
+          display:none !important;
+      }
+      .company-img{
+          width:40%;
+      }
+      .responsive-navbar{
+          display:block !important;
+      }
+
+
+      .right__bar--list{
+          .list-item{
+              .link-item{
+                   display:none !important;
+              }
+          }
+      }
+      .right__bar--hotline{
+          display:block !important;
+          color:white;
+      }
+                  
+                
+      //Wrap Services
+             .wrap-services{
+            position:relative;
+             overflow: hidden;
+              .container{
+                        .services-content{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            
+                .vertical-line{
+                    img{
+                        transform:translateY(-6px);
+                    }
+                }
+                
+                  .services-title{
+                      margin-top:26px;
+                    font-size:34px;
+                    color:rgba(0,0,0,0.8);
+                        h4{
+                            margin-top:12px !important;
+                            font-size:20px !important;
+                        }
+                        p{
+                            font-size:14px !important;
+                             margin-top:38px;
+                            font-family: 'Open Sans';
+                        }
+                    }
+                  .box-display{
+                            flex-direction:column !important;
+                            .left-box{
+                                position:relative !important;
+                                transform:translateX(0) !important;
+                                .wrap-item{
+                                    background: transparent !important;
+                                    display:flex !important;
+                                    flex-direction: column !important;
+                                    padding:4px !important;
+                                    .item{
+                                        margin-top:12px !important;
+                                    
+                                        
+                                    }
+                                }
+                            
+                            }
+                            .right-box{
+                                margin-top:20px !important;
+                                width:100% !important;
+                                h4{
+                                    font-size:12px !important;
+                                }
+                                .box{
+                                    width:80% !important;
+                                    div{
+                                        font-size:10px !important;
+                                        img{
+                                            width:100% !important;
+                                        }
+                                    }
+                                    .button-link{
+                                        font-size:12px !important;
+                                        
+                                    }
+                                }
+                            }
+
+
+                           
+                         }
+            
+                .vertical-line{
+                    margin-top:40px;
+                    transform:translateY(30px);
+                }
+                .end-services{
+                    // position: absolute;
+                    // top: 100%;
+                    width:100vw;
+
+                    z-index:2;
+
+                    img{
+                        width:100%;
+                        transform: translateY(5px);
+                    }
+    }
+}
+
+
+
+        }
+        }
+         // Wrap Phone
+        .wrap-phone{
+            // margin-top:100px;
+            height:auto;
+            position:relative;
+            background:#42b470;
+            overflow: hidden;
+            .end-phone{
+                
+                width:100%;
+                img{
+                    width:101%;
+                    z-index:5000;
+                }
+            }
+         
+           .container{
+                .vertical-line{
+                    text-align: center;
+                    position:relative;
+                    z-index:1000;
+                    transform:translateY(-20px);
+                }
+                .layer-background{
+                    z-index: 100;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                   z-index:0;
+                    .banner-bg{
+                        transform:translateY(-40px);
+                        
+                    }
+                    .layer{
+                        position:absolute;
+                        top:0;left:0;
+                        width:100%;
+                        
+                    }
+                }
+                .phone-content{
+                        margin-bottom:70px;
+                        .phone-title{
+                            position:relative;
+                            text-align: center;
+                                color:rgba(255,255,255,0.9);
+                                font-size:36px;
+                                margin-top:38px;
+                        }
+                        .phone-text{
+                             position:relative;
+                               text-align: center;
+                                color:rgba(255,255,255,0.7);
+                                font-size:17px;
+                                margin-top:16px;
+                        }
+                        .phone__box{
+                            margin-top:114px;
+                            display: none !important;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-gap: 10px;
+                            .phone__box--left{
+                                position:relative;
+                                ul{
+                                    display:flex;
+                                    flex-direction: column;
+                                    li{
+                                        margin:46px 0 84px 0;
+                                        display:flex;
+                                        
+                                        .box-text{
+                                            color:rgba(255,255,255,0.8);
+                                            text-align: right;
+                                           h4{
+                                               text-transform: uppercase;
+                                              
+                                           }
+                                           p{
+                                               margin-top:20px;
+                                                   
+                                           }
+
+                                        }
+                                        img{
+                                            width:auto;
+                                            height:fit-content;
+                                            margin-left:30px;
+                                        }
+                                    }
+                                }
+                            }
+                            .phone__box--middle{
+                                    .phone-image{
+                                        position:relative;
+                                        margin-top:200px;
+                                      
+                                        .background-phone{
+                                            position:absolute;
+                                           top:50%;
+                                           left:50%;
+                                            transform:translate(-50%,-50%);
+                                        }
+                                        .background-white{
+                                            position:absolute;
+                                            top:50%;
+                                            left:50%;
+                                            transform:translate(-49.5%,-51.5%);
+                                        }
+                                        .background-logo{
+                                            position:absolute;
+                                            top:0;
+                                            left:50%;
+                                            transform:translate(-50%,-300%);
+                                        }
+                                        .image-circle{
+                                                    position:relative;
+                                                    .background-circle{
+                                                            position:absolute;
+                                                            top:50%;
+                                                            left:50%;
+                                                            transform:translate(-50%,-50%);
+                                                            z-index:2;
+                                                        }
+                                                    .background-shape{
+                                                        position:absolute;
+                                                        top:50%;
+                                                        left:50%;
+                                                        transform:translate(-50%,-50%);
+                                                        z-index:3;
+                                                    }
+                                                    .background-content{
+                                                         position:absolute;
+                                                        top:50%;
+                                                        left:50%;
+                                                        transform:translate(-50%,-50%);
+                                                        z-index:1;
+                                                    }
+                                        }
+
+                                    }
+                            }
+                            .phone__box--right{
+                                position:relative;
+                                     ul{
+                                    display:flex;
+                                    flex-direction: column;
+                                    li{
+                                        margin:46px 0 84px 0;
+                                        display:flex;
+                                        flex-direction: row-reverse;
+                                        .box-text{
+                                                 color:rgba(255,255,255,0.8);
+                                            text-align: left;
+
+                                           h4{
+                                               text-transform: uppercase;
+                                           }
+                                           p{
+                                               margin-top:20px;
+                                           }
+
+                                        }
+                                        img{
+                                            width:auto;
+                                            height:fit-content;
+                                            margin-right:30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                          .phone__box--responsive{
+                            margin-top:80px !important;
+                          padding-bottom:100px;
+                            display: grid !important;
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-gap: 10px;
+                           
+                            .phone__box--left{
+                                    .phone-image{
+                                        position:relative;
+                                        margin-top:200px;
+                                      
+                                        .background-phone{
+                                            position:absolute;
+                                            top:50%;
+                                            left:50%;
+                                            transform:translate(-50%,-50%);
+                                        }
+                                        .background-white{
+                                            position:absolute;
+                                            top:50%;
+                                            left:50%;
+                                            transform:translate(-49.5%,-51.5%);
+                                        }
+                                        .background-logo{
+                                            position:absolute;
+                                            top:0;
+                                            left:50%;
+                                            transform:translate(-50%,-300%);
+                                        }
+                                        .image-circle{
+                                                    position:relative;
+                                                    .background-circle{
+                                                            position:absolute;
+                                                            top:50%;
+                                                            left:50%;
+                                                            transform:translate(-50%,-50%);
+                                                            z-index:2;
+                                                        }
+                                                    .background-shape{
+                                                        position:absolute;
+                                                        top:50%;
+                                                        left:50%;
+                                                        transform:translate(-50%,-50%);
+                                                        z-index:3;
+                                                    }
+                                                    .background-content{
+                                                         position:absolute;
+                                                        top:50%;
+                                                        left:50%;
+                                                        transform:translate(-50%,-50%);
+                                                        z-index:1;
+                                                    }
+                                        }
+
+                                    }
+                            }
+                            .phone__box--right{
+                                position:relative;
+                                margin-left:20px;
+                                align-items:center;
+                                     ul{
+                                    display:flex;
+                                    flex-direction: column;
+                                    li{
+                                        margin:20px 0;
+                                        display:flex;
+                                        flex-direction: row-reverse;
+                                        justify-content: flex-end;
+                                        .box-text{
+                                                 color:rgba(255,255,255,0.8);
+                                                text-align: left;
+
+                                           h4{
+                                               text-transform: uppercase;
+                                               font-size:12px !important;
+                                           }
+                                           p{
+                                               margin-top:6px !important;
+                                               font-size:10px !important;
+                                           }
+
+                                        }
+                                        img{
+                                            width:auto;
+                                            height:fit-content;
+                                            margin-right:30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    
+                }
+
+           }
+        }
+         // Wrap Product
+        .wrap-product{
+            overflow:hidden;
+            height:auto !important;
+            z-index:3000;
+            .container{
+               .product-content{
+                   display:flex;
+                   flex-direction: column;
+                   justify-content:space-between !important;
+                   overflow: hidden;
+                   margin-bottom:0 !important;
+                   .vertical-line{
+                     text-align: center;
+                     transform:translateY(-12px);
+                     z-index:4000;
+                   }
+                    .product-title{
+                        font-size:24px !important;
+                        color:rgba(0,0,0,0.8);
+                        margin:36px 0 !important;
+                        text-align: center;
+
+                    }
+                    .product-image{
+                        display:flex;
+                        justify-content: center;
+                        transform:translateY(13px);
+                        margin-bottom:0 !important;
+                        .product{
+                            position:relative;
+                            .side-phone{
+                            width:180px !important;
+                            }
+                            
+                            }
+                            .p1{
+                                transform:translate(80px,30px) !important;
+                                z-index:1;
+                                
+                                .about-phone{
+                                    position:absolute;
+                                    top:15px !important;
+                                    left:9px !important;
+                                    width:160px !important;
+                                }
+                            }
+                            .p2{
+                                z-index:2;
+                            }
+                            .p3{
+                                transform:translate(-80px,30px) !important;
+                                z-index:1;
+                                
+                                .about-phone{
+                                    position:absolute;
+                                    top:15px !important;
+                                    right:9px !important;
+                                    width:160px !important;
+                                }
+                            }
+                        
+                    }
+               }
+            }
+        }
+             // Wrap response
+       
+        .wrap-response{
+            z-index:4;
+                .slogan{
+                    background:#0c161e;
+                    text-align: center;
+                    .container{
+                        p{
+                            font-size:14px !important;
+                            padding:32px 0 !important;
+                            color:rgba(255,255,255,0.7);
+                            span{
+                                color:white;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+
+                }
+                .response{
+                          position:relative;
+                        // width:100%;
+                        .background-response{
+                            position:relative;
+                            top:0;
+                            left:0;
+                            width:100%;
+                            height:fit-content;
+                            img{
+                                width:100%;
+                                height:auto;
+                            }
+                        }
+                       
+                           
+                            .response-content{
+                                position:absolute;
+                                top:0;
+                                left:0;
+                                width:100%;
+                              
+                                .container{
+                                     width:100%;
+                                    .vertical-line-top{
+                                    text-align: center;
+
+                                        z-index:1000;
+                                        img{
+                                            margin-top:4px !important;
+                                            height:30px;
+                                        }
+                                     }
+                                     .response-text{
+                                         color:white;
+                                         text-align: center;
+                                         margin-top:6px !important;
+                                         font-size:10px !important;
+                                     }
+                                     .slider{
+                                        margin-top:30px !important;
+                                         display:flex;
+                                         justify-content:space-between;
+                                         align-items: center;
+                                         .prev-btn{
+                                            display:inline;
+                                            padding:4px 8px !important;
+                                            background-color:white;
+                                         }
+                                         .next-btn{
+                                            display:inline;
+                                             padding:4px 8px !important;
+                                            background-color:white;
+                                         }
+                                         .slider-content{
+                                             width:50% !important;
+                                             display:flex;
+                                             flex-direction: column;
+                                             text-align: center;
+                                             background:rgba(0,0,0,0.4);
+                                             position:relative;
+                                               
+                                             .avatar{
+                                                 position:absolute;
+                                                 top:0;
+                                                 left:50%;
+                                                 transform:translate(-50%,-50%);
+                                                    
+                                                    width:50px !important;
+                                                    
+                                                    height:50px !important;
+                                                  
+                                                    border-radius:50%;
+                                                    border:3px solid white;
+                                                   background:url('../images/avatar.png');
+                                                   background-position:right;
+
+                                                 
+                                             }
+                                             .bio{
+                                                margin-top:34px !important;
+                                                padding:0 12px !important;
+                                                 color:white;
+                                                 font-size:10px !important;
+                                             }
+                                             .profile{
+                                               margin:10px 0 !important;
+                                               color:white;
+                                               font-style: italic;
+                                               font-size:11px !important;
+                                            
+                                             }
+                                         }
+                                         
+                                     }
+
+                                     .dot-slide{
+                                         display:flex;
+                                         justify-content: center;
+                                         margin-top:8px !important;
+                                         i{
+                                             margin:2px;
+                                             color:white;
+                                             &:nth-child(1){
+                                                 color:#659c19;
+                                             }
+                                         }
+                                     }
+                                     .vertical-line-bottom{
+                                          text-align: center;
+                                          margin-top:none !important;
+                                         margin-bottom:0px !important;
+                                         display:none;
+                                        img{
+                                              height:30px !important;
+                                        }
+                                     }
+
+                                }
+                            }
+                            .end-response{
+                                position:absolute;
+                                bottom:0;
+                                left:0;
+                                width:100%;
+                                img{
+                                    
+                                    width:100%;
+                                   
+                                }
+                            }
+                        
+                }
+            
+        }
+        //News
+           .wrap-news{
+            z-index:5;
+            .container{
+                .news-content{
+                    .vertical-line{
+                        text-align: center;
+                        transform:translateY(0px)  !important;
+                        img{
+                            height:30px !important;
+                        }
+                    }
+                    .news-title{
+                        font-size:20px !important;
+                        color:rgba(0,0,0,0.8);
+                        margin-top:20px;
+                        text-align: center;
+                    }
+                    .news-list{
+                        display:flex;
+                        justify-content:center;
+                        flex-direction: column;
+                        margin-top:0px !important;
+                       .news__item{
+                            padding:0 0 !important;
+                            margin-top:20px !important;
+                           box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+                            
+                            img{
+                                display:block;
+                                width:100% !important; 
+                                // height:262px;
+                            }
+                            .news__item--content{
+                                background:#f5f5f5;
+                                text-align: center;
+                                transform:translateY(0px) !important;
+                                margin:0 !important;
+                                color:rgba(0,0,0,0.8);
+                                transition:0.2s ease-in-out;
+                                cursor:default;
+                                .news-date{
+                                    padding:10px 0 !important;
+                                    display:block;
+                                    font-size:12px !important;
+                                    i{
+                                        margin-right:4px;
+                                    }
+                                }
+                                &:hover{
+                                    background:#2ed573;
+                                    color:rgba(255,255,255,1);
+                                    a{
+                                        color:rgba(255,255,255,0.9);
+                                    }
+                                }
+                                h4{
+                                    margin-bottom:20px;
+                                    text-transform: uppercase;
+                                    padding:0 10px !important;
+                                    font-size: 12px !important;
+                                    font-weight: 800;
+
+                                  
+                                }
+                                .news-desc{
+                                    margin-bottom:20px;
+                                    font-size:12px !important;
+                                    padding:0 30px;
+                                    height:100%;// chiều rộng bằng khối bao nó
+                                    white-space: pre-wrap; 
+                                    overflow: hidden; // ẩn các nội dung khi kích thước lớn hơn chiều rộng khối bên ngoài
+                                    text-overflow: ellipsis; //thêm 3 dấu chấm ở cuối
+                                    -webkit-line-clamp: 3;// số dòng muốn hiển thị
+                                    -webkit-box-orient: vertical;
+                                    display: -webkit-box;
+                                }
+                                a{
+                                    padding:6px 0 !important;
+                                    font-size:13px !important;
+                                    display:block;
+                                    border-top:1px dashed rgba(255,255,255,0.6);
+                                    text-decoration: none;
+                                    color:rgba(0,0,0,0.7);
+                                    cursor:pointer;
+                                }
+                            }
+                       }
+                    }
+                    .end-news{
+                        text-align: center;
+                        transform:translateY(26px);
+                        img{
+                            height:30px !important;
+                            margin-bottom:20px;
+                        }
+                    }
+                }
+            }
+        }
+        .wrap-recruitment{
+            position:relative;
+            .background__recuitment{
+                position:relative;
+                top:0;
+                left:0;
+                width:100%;
+                img{
+                    width:100%;
+                }
+            }
+            .background__recruitment--end{
+                position:absolute;
+                top:100%;
+                left:0;
+                transform:translateY(-56%);
+                width:100%;
+                img{
+                    width:100%;
+                }
+            }
+           .recruitment-main{
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                .container{
+               
+                
+                .recruitment-content{
+                    width:100%;
+                    .vertical-line{
+                        text-align: center;
+                        padding-top:30px !important;
+                        width:100%;
+
+                        img{
+                                text-align: center;
+                                height:30px !important;
+                        }
+                    }
+                    h4{
+                        text-align: center;
+                        margin-top:10px !important;
+                        color:white;
+                        font-size:16px !important;
+                    }
+                    .recruitment-info{
+                        display:flex;
+                        margin-top:40px !important;
+                        
+                        justify-content:space-between;
+                        padding:0 0 !important;
+                        align-items:center;
+                        .recruitment-list{
+                       
+                            ul{
+                                margin-bottom:12px !important;
+                                li{
+                                    padding:6px 0 !important;
+                                    display:flex;
+                                    // align-items:center;
+                                    img{
+                                        height: fit-content;
+                                    }
+                                    p{
+                                        color:white;
+                                        font-size:10px !important;
+                                        font-family: 'Open Sans', sans-serif;
+                                        margin-left:22px;
+                                    }
+                                }
+                            }
+                            .button{
+                                font-size:10px !important;
+                                padding:6px 10px !important;
+                            }
+                           
+                        }
+                        .image-recruit{
+                            width:30%;
+                        }
+                    }
+                }
+            }
+           }
+        }
+
+
+
+      //footer
+      footer{
+        .wrap-footer{
+            .container{
+                .footer-content{
+                    .footer-desc{
+                        font-size:12px !important;
+                    }
+                    .footer-contact{
+                        ul{
+                            display:flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            li{ 
+                                    display:flex;
+                                    justify-content: center;
+                                    margin:12px 0;
+                                    p{
+                                        font-size:10px !important;
+                                     }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .copyright{
+                p{
+                    padding:10px 0 !important;
+                    font-size:10px !important;
+                }
+            }
+        }
+    }
+
+ 
+}
+
+
+
+
+
+@media (max-width: 576px) { 
+       nav{
+            height:480px !important;
+          .wrap{
+              background:none !important;
+              .logo{
+                  img{
+                      width:120px !important;
+                      border-bottom:2px solid rgba(255,255,255,0.2);
+                  }
+              }
+          }
+          .hero{
+              .hero-content{
+                .hero-text{
+                    font-size:12px !important;
+                }
+                .company-img{
+                    margin-top:20px !important;
+                }
+              }
+          }
+      }
+      .container{
+          width:80% !important;
+      }
+      .hero-text{
+          font-size:16px !important;
+      }
+      .nav-list{
+          display:none !important;
+      }
+      .company-img{
+          width:40%;
+      }
+      .responsive-navbar{
+          display:block !important;
+         
+      }
+      .content{
+          
+          display:flex;
+          .left__bar{
+          ul{
+                li{
+
+                }
+          }
+          i{
+            
+          }
+          .social{
+              float:right;
+              .social-ul{
+                  .list__item--social{
+                      font-size:10px !important;
+                  }
+              }
+          }
+      }
+      .right__bar--list{
+          .list-item{
+              .link-item{
+                   display:none !important;
+                   
+              }
+          }
+      }
+      .right__bar--hotline{
+          display:none !important;
+          color:white;
+          font-size:8px !important;
+      }
+      }
+                  
+                
+      //Wrap Services
+             .wrap-services{
+            position:relative;
+             overflow: hidden;
+              .container{
+                        .services-content{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            
+                .vertical-line{
+                    margin-top:0px !important;
+                    img{
+                        margin-top:0px !important;
+                        transform:translateY(-6px);
+                    }
+                }
+                
+                  .services-title{
+                      margin-top:26px;
+                    font-size:34px;
+                    color:rgba(0,0,0,0.8);
+                        h4{
+                            margin-top:12px !important;
+                            font-size:20px !important;
+                        }
+                        p{
+                            font-size:14px !important;
+                             margin-top:38px;
+                            font-family: 'Open Sans';
+                        }
+                    }
+                  .box-display{
+                            flex-direction:column !important;
+                            .left-box{
+                                position:relative !important;
+                                transform:translateX(0) !important;
+                                .wrap-item{
+                                    background: transparent !important;
+                                    display:flex !important;
+                                    flex-direction: column !important;
+                                    padding:4px !important;
+                                    .item{
+                                        margin-top:12px !important;
+                                    
+                                        
+                                    }
+                                }
+                            
+                            }
+                            .right-box{
+                                margin-top:20px !important;
+                                padding:10px 0 10px 20px !important;
+                                width:100% !important;
+                                h4{
+                                    font-size:12px !important;
+                                }
+                                .box{
+                                    width:80% !important;
+                                    
+                                    div{
+                                        font-size:10px !important;
+                                        img{
+                                            width:100% !important;
+                                        }
+                                    }
+                                    .button-link{
+                                        font-size:12px !important;
+                                        
+                                    }
+                                }
+                                 div{
+                                     grid-column: span 2 / auto !important;
+                                    }
+                            }
+
+
+                           
+                         }
+            
+                .vertical-line{
+                    margin-top:40px;
+                    transform:translateY(30px);
+                }
+                .end-services{
+                    // position: absolute;
+                    // top: 100%;
+                    width:100vw;
+
+                    z-index:2;
+
+                    img{
+                        width:100%;
+                        transform: translateY(5px);
+                    }
+    }
+}
+
+
+
+        }
+        }
+         // Wrap Phone
+        .wrap-phone{
+            // margin-top:100px;
+            height:auto;
+            position:relative;
+            background:#42b470;
+            overflow: hidden;
+            .end-phone{
+                
+                width:100%;
+                img{
+                    width:101%;
+                    z-index:5000;
+                }
+            }
+         
+           .container{
+                .vertical-line{
+                    text-align: center;
+                    position:relative;
+                    z-index:1000;
+                    transform:translateY(-20px);
+                }
+                .layer-background{
+                    z-index: 100;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                   z-index:0;
+                    .banner-bg{
+                        transform:translateY(-40px);
+                        
+                    }
+                    .layer{
+                        position:absolute;
+                        top:0;left:0;
+                        width:100%;
+                        
+                    }
+                }
+                .phone-content{
+                        margin-bottom:70px;
+                        .phone-title{
+                            position:relative;
+                            text-align: center;
+                                color:rgba(255,255,255,0.9);
+                                font-size:36px;
+                                margin-top:38px;
+                        }
+                        .phone-text{
+                             position:relative;
+                               text-align: center;
+                                color:rgba(255,255,255,0.7);
+                                font-size:17px;
+                                margin-top:16px;
+                        }
+                        .phone__box{
+                            margin-top:114px;
+                            display: none !important;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-gap: 10px;
+                            .phone__box--left{
+                                position:relative;
+                                ul{
+                                    display:flex;
+                                    flex-direction: column;
+                                    li{
+                                        margin:46px 0 84px 0;
+                                        display:flex;
+                                        
+                                        .box-text{
+                                            color:rgba(255,255,255,0.8);
+                                            text-align: right;
+                                           h4{
+                                               text-transform: uppercase;
+                                              
+                                           }
+                                           p{
+                                               margin-top:20px;
+                                                   
+                                           }
+
+                                        }
+                                        img{
+                                            width:auto;
+                                            height:fit-content;
+                                            margin-left:30px;
+                                        }
+                                    }
+                                }
+                            }
+                            .phone__box--middle{
+                                    .phone-image{
+                                        position:relative;
+                                        margin-top:200px;
+                                      
+                                        .background-phone{
+                                            position:absolute;
+                                           top:50%;
+                                           left:50%;
+                                            transform:translate(-50%,-50%);
+                                        }
+                                        .background-white{
+                                            position:absolute;
+                                            top:50%;
+                                            left:50%;
+                                            transform:translate(-49.5%,-51.5%);
+                                        }
+                                        .background-logo{
+                                            position:absolute;
+                                            top:0;
+                                            left:50%;
+                                            transform:translate(-50%,-300%);
+                                        }
+                                        .image-circle{
+                                                    position:relative;
+                                                    .background-circle{
+                                                            position:absolute;
+                                                            top:50%;
+                                                            left:50%;
+                                                            transform:translate(-50%,-50%);
+                                                            z-index:2;
+                                                        }
+                                                    .background-shape{
+                                                        position:absolute;
+                                                        top:50%;
+                                                        left:50%;
+                                                        transform:translate(-50%,-50%);
+                                                        z-index:3;
+                                                    }
+                                                    .background-content{
+                                                         position:absolute;
+                                                        top:50%;
+                                                        left:50%;
+                                                        transform:translate(-50%,-50%);
+                                                        z-index:1;
+                                                    }
+                                        }
+
+                                    }
+                            }
+                            .phone__box--right{
+                                position:relative;
+                                     ul{
+                                    display:flex;
+                                    flex-direction: column;
+                                    li{
+                                        margin:46px 0 84px 0;
+                                        display:flex;
+                                        flex-direction: row-reverse;
+                                        .box-text{
+                                                 color:rgba(255,255,255,0.8);
+                                            text-align: left;
+
+                                           h4{
+                                               text-transform: uppercase;
+                                           }
+                                           p{
+                                               margin-top:20px;
+                                           }
+
+                                        }
+                                        img{
+                                            width:auto;
+                                            height:fit-content;
+                                            margin-right:30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                          .phone__box--responsive{
+                            margin-top:80px !important;
+                          padding-bottom:20px;
+                            display: grid !important;
+                            grid-template-columns: repeat(1, 1fr);
+                            grid-gap: 10px;
+                           
+                            .phone__box--left{
+                                    .phone-image{
+                                        position:relative;
+                                        margin-top:200px;
+                                      
+                                        .background-phone{
+                                            position:absolute;
+                                            top:50%;
+                                            left:50%;
+                                            transform:translate(-50%,-50%);
+                                        }
+                                        .background-white{
+                                            position:absolute;
+                                            top:50%;
+                                            left:50%;
+                                            transform:translate(-49.5%,-51.5%);
+                                        }
+                                        .background-logo{
+                                            position:absolute;
+                                            top:0;
+                                            left:50%;
+                                            transform:translate(-50%,-300%);
+                                        }
+                                        .image-circle{
+                                                    position:relative;
+                                                    .background-circle{
+                                                            position:absolute;
+                                                            top:50%;
+                                                            left:50%;
+                                                            transform:translate(-50%,-50%);
+                                                            z-index:2;
+                                                        }
+                                                    .background-shape{
+                                                        position:absolute;
+                                                        top:50%;
+                                                        left:50%;
+                                                        transform:translate(-50%,-50%);
+                                                        z-index:3;
+                                                    }
+                                                    .background-content{
+                                                         position:absolute;
+                                                        top:50%;
+                                                        left:50%;
+                                                        transform:translate(-50%,-50%);
+                                                        z-index:1;
+                                                    }
+                                        }
+
+                                    }
+                            }
+                            .phone__box--right{
+                                position:relative;
+                                margin-top:250px !important;
+                                margin-left:20px;
+                                align-items:center;
+                                     ul{
+                                    display:flex;
+                                    flex-direction: column;
+                                    li{
+                                        margin:20px 0;
+                                        display:flex;
+                                        flex-direction: row-reverse;
+                                        justify-content: flex-end;
+                                        .box-text{
+                                                 color:rgba(255,255,255,0.8);
+                                                text-align: left;
+
+                                           h4{
+                                               text-transform: uppercase;
+                                               font-size:12px !important;
+                                           }
+                                           p{
+                                               margin-top:6px !important;
+                                               font-size:10px !important;
+                                           }
+
+                                        }
+                                        img{
+                                            width:auto;
+                                            height:fit-content;
+                                            margin-right:30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    
+                }
+
+           }
+        }
+         // Wrap Product
+        .wrap-product{
+            overflow:hidden;
+            height:auto !important;
+            z-index:3000;
+            .container{
+               .product-content{
+                   display:flex;
+                   flex-direction: column;
+                   justify-content:space-between !important;
+                   overflow: hidden;
+                   margin-bottom:0 !important;
+                   .vertical-line{
+                     text-align: center;
+                     transform:translateY(-12px);
+                     z-index:4000;
+                   }
+                    .product-title{
+                        font-size:14px !important;
+                        color:rgba(0,0,0,0.8);
+                        margin:36px 0 !important;
+                        text-align: center;
+
+                    }
+                    .product-image{
+                        display:flex;
+                        justify-content: center;
+                        transform:translateY(13px);
+                        margin-bottom:0 !important;
+                        .product{
+                            position:relative;
+                            .side-phone{
+                            width:130px !important;
+                            }
+                            
+                            }
+                            .p1{
+                                transform:translate(80px,30px) !important;
+                                z-index:1;
+                                
+                                .about-phone{
+                                    position:absolute;
+                                    top:15px !important;
+                                    left:9px !important;
+                                    width:160px !important;
+                                }
+                            }
+                            .p2{
+                                z-index:2;
+                            }
+                            .p3{
+                                transform:translate(-80px,30px) !important;
+                                z-index:1;
+                                
+                                .about-phone{
+                                    position:absolute;
+                                    top:15px !important;
+                                    right:9px !important;
+                                    width:160px !important;
+                                }
+                            }
+                        
+                    }
+               }
+            }
+        }
+             // Wrap response
+       
+        .wrap-response{
+            z-index:4;
+                .slogan{
+                    background:#0c161e;
+                    text-align: center;
+                    .container{
+                        p{
+                            font-size:8px !important;
+                            padding:10px 0 !important;
+                            color:rgba(255,255,255,0.7);
+                            span{
+                                color:white;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+
+                }
+                .response{
+                          position:relative;
+                        // width:100%;
+                        .background-response{
+                            position:relative;
+                            top:0;
+                            left:0;
+                            width:100%;
+                            height:fit-content;
+                            img{
+                                width:100%;
+                                height:auto;
+                            }
+                        }
+                       
+                           
+                            .response-content{
+                                position:absolute;
+                                top:0;
+                                left:0;
+                                width:100%;
+                              
+                                .container{
+                                     width:100%;
+                                    .vertical-line-top{
+                                    text-align: center;
+                                        display:none;
+                                        z-index:1000;
+                                        img{
+                                            margin-top:4px !important;
+                                            height:30px;
+                                        }
+                                     }
+                                     .response-text{
+                                         color:white;
+                                         text-align: center;
+                                         margin-top:6px !important;
+                                         font-size:8px !important;
+                                     }
+                                     .slider{
+                                        margin-top:20px !important;
+                                         display:flex;
+                                         justify-content:space-between;
+                                         align-items: center;
+                                         .prev-btn{
+                                            display:inline;
+                                            padding:4px 8px !important;
+                                            background-color:white;
+                                         }
+                                         .next-btn{
+                                            display:inline;
+                                             padding:4px 8px !important;
+                                            background-color:white;
+                                         }
+                                         .slider-content{
+                                             width:70% !important;
+                                             display:flex;
+                                             flex-direction: column;
+                                             text-align: center;
+                                             background:rgba(0,0,0,0.4);
+                                             position:relative;
+                                               
+                                             .avatar{
+                                                 position:absolute;
+                                                 top:0;
+                                                 left:50%;
+                                                 transform:translate(-50%,-50%);
+                                                    
+                                                    width:30px !important;
+                                                    
+                                                    height:30px !important;
+                                                  
+                                                    border-radius:50%;
+                                                    border:2px solid white !important;
+                                                   background:url('../images/avatar.png');
+                                                   background-position:right;
+
+                                                 
+                                             }
+                                             .bio{
+                                                margin-top:34px !important;
+                                                padding:0 12px !important;
+                                                 color:white;
+                                                 font-size:6px !important;
+                                             }
+                                             .profile{
+                                               margin:10px 0 !important;
+                                               color:white;
+                                               font-style: italic;
+                                               font-size:11px !important;
+                                            
+                                             }
+                                         }
+                                         
+                                     }
+
+                                     .dot-slide{
+                                         display:flex;
+                                         justify-content: center;
+                                         margin-top:8px !important;
+                                         i{
+                                             margin:2px;
+                                             color:white;
+                                             &:nth-child(1){
+                                                 color:#659c19;
+                                             }
+                                         }
+                                     }
+                                     .vertical-line-bottom{
+                                          text-align: center;
+                                          margin-top:none !important;
+                                         margin-bottom:0px !important;
+                                         display:none;
+                                        img{
+                                              height:30px !important;
+                                        }
+                                     }
+
+                                }
+                            }
+                            .end-response{
+                                position:absolute;
+                                bottom:0;
+                                left:0;
+                                width:100%;
+                                img{
+                                    
+                                    width:100%;
+                                   
+                                }
+                            }
+                        
+                }
+            
+        }
+        //News
+           .wrap-news{
+            z-index:5;
+            .container{
+                .news-content{
+                    .vertical-line{
+                        text-align: center;
+                        transform:translateY(0px)  !important;
+                        img{
+                            height:30px !important;
+                        }
+                    }
+                    .news-title{
+                        font-size:20px !important;
+                        color:rgba(0,0,0,0.8);
+                        margin-top:20px;
+                        text-align: center;
+                    }
+                    .news-list{
+                        display:flex;
+                        justify-content:center;
+                        flex-direction: column;
+                        margin-top:0px !important;
+                       .news__item{
+                            padding:0 0 !important;
+                            margin-top:20px !important;
+                           box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+                            
+                            img{
+                                display:block;
+                                width:100% !important; 
+                                // height:262px;
+                            }
+                            .news__item--content{
+                                background:#f5f5f5;
+                                text-align: center;
+                                transform:translateY(0px) !important;
+                                margin:0 !important;
+                                color:rgba(0,0,0,0.8);
+                                transition:0.2s ease-in-out;
+                                cursor:default;
+                                .news-date{
+                                    padding:10px 0 !important;
+                                    display:block;
+                                    font-size:12px !important;
+                                    i{
+                                        margin-right:4px;
+                                    }
+                                }
+                                &:hover{
+                                    background:#2ed573;
+                                    color:rgba(255,255,255,1);
+                                    a{
+                                        color:rgba(255,255,255,0.9);
+                                    }
+                                }
+                                h4{
+                                    margin-bottom:20px;
+                                    text-transform: uppercase;
+                                    padding:0 10px !important;
+                                    font-size: 12px !important;
+                                    font-weight: 800;
+
+                                  
+                                }
+                                .news-desc{
+                                    margin-bottom:20px;
+                                    font-size:12px !important;
+                                    padding:0 30px;
+                                    height:100%;// chiều rộng bằng khối bao nó
+                                    white-space: pre-wrap; 
+                                    overflow: hidden; // ẩn các nội dung khi kích thước lớn hơn chiều rộng khối bên ngoài
+                                    text-overflow: ellipsis; //thêm 3 dấu chấm ở cuối
+                                    -webkit-line-clamp: 3;// số dòng muốn hiển thị
+                                    -webkit-box-orient: vertical;
+                                    display: -webkit-box;
+                                }
+                                a{
+                                    padding:6px 0 !important;
+                                    font-size:13px !important;
+                                    display:block;
+                                    border-top:1px dashed rgba(255,255,255,0.6);
+                                    text-decoration: none;
+                                    color:rgba(0,0,0,0.7);
+                                    cursor:pointer;
+                                }
+                            }
+                       }
+                    }
+                    .end-news{
+                        text-align: center;
+                        transform:translateY(26px);
+                        img{
+                            height:30px !important;
+                            margin-bottom:20px;
+                        }
+                    }
+                }
+            }
+        }
+        .wrap-recruitment{
+            position:relative;
+            .background__recuitment{
+                position:relative;
+                top:0;
+                left:0;
+                width:100%;
+                img{
+                    width:100%;
+                }
+            }
+            .background__recruitment--end{
+                position:absolute;
+                top:100%;
+                left:0;
+                transform:translateY(-56%);
+                width:100%;
+                img{
+                    width:100%;
+                }
+            }
+           .recruitment-main{
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                .container{
+               
+                
+                .recruitment-content{
+                    width:100%;
+                    .vertical-line{
+                        text-align: center;
+                        padding-top:30px !important;
+                        width:100%;
+
+                        img{
+                                text-align: center;
+                                height:30px !important;
+                        }
+                    }
+                    h4{
+                        text-align: center;
+                        margin-top:10px !important;
+                        color:white;
+                        font-size:16px !important;
+                    }
+                    .recruitment-info{
+                        display:flex;
+                        margin-top:40px !important;
+                        
+                        justify-content:space-between;
+                        padding:0 0 !important;
+                        align-items:center;
+                        .recruitment-list{
+                       
+                            ul{
+                                margin-bottom:12px !important;
+                                li{
+                                    padding:6px 0 !important;
+                                    display:flex;
+                                    // align-items:center;
+                                    img{
+                                        height: fit-content;
+                                    }
+                                    p{
+                                        color:white;
+                                        font-size:10px !important;
+                                        font-family: 'Open Sans', sans-serif;
+                                        margin-left:22px;
+                                    }
+                                }
+                            }
+                            .button{
+                                font-size:10px !important;
+                                padding:6px 10px !important;
+                            }
+                           
+                        }
+                        .image-recruit{
+                            width:30%;
+                        }
+                    }
+                }
+            }
+           }
+        }
+
+
+
+      //footer
+      footer{
+        
+        .wrap-footer{
+            .container{
+                .footer-content{
+                    .footer-desc{
+                        font-size:12px !important;
+                    }
+                    .footer-contact{
+                        ul{
+                            display:flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            li{ 
+                                    display:flex;
+                                    justify-content: center;
+                                    margin:12px 0;
+                                    p{
+                                        font-size:10px !important;
+                                     }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .copyright{
+                p{
+                    padding:10px 0 !important;
+                    font-size:10px !important;
+                }
+            }
+        }
+    }
+
+ 
+}
+
+ 
+ 
